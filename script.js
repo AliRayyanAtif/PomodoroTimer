@@ -58,7 +58,7 @@ function startTimer() {
         let paddedminutes = String(minutes).padStart(2, '0');
         let paddedseconds = String(seconds).padStart(2, '0');
         document.getElementById("timerDisplay").textContent = `${paddedminutes}:${paddedseconds}`
-        document.getElementById("Titlee").textContent =  `${paddedMins}:${paddedSecs}`;
+        document.getElementById("Titlee").textContent =  `${paddedminutes}:${paddedseconds}`;
         totalSeconds = totalSeconds - 1
         let progress = totalSeconds / originalTime;
         let angle = 360 * (1 - progress);
